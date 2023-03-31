@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Journey Homepage</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+  </head>
+  <body>
+    <header>
+      <h1>Travel with Ease today!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button  onclick="logout()" id="logout" class="btn btn-danger right">Logout</button>
+    </header>
+    <main>
+      <section class="results">
+        <h3  id="user" >Hello user!</h3>
+      </section>
+      <section class="search">
+        <h2>Find Trains</h2>
+        <form>
+          <input type="text" id="from" placeholder="From">
+          <input type="text" id="to" placeholder="To">
+          <input type="date" id="date" placeholder="Date">
+          <button type="button" id="search" onclick="get_tourist_places();searchTrains()">Search</button>
+        </form>
+      </section>
+     <section class="results">
+        <h2>Search Results</h2>
+        <h3  id="loading" class="blink" ></h3>
+        <table id="trains">
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Train Number</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Book</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section> 
+      <section class="results">
+        <center><small><span id="train_not_found" style="color: red"></span></small></center>
+
+      </section>
+
+      <div id="container">
+        <center><h3 id="thanks" style="color: rgb(70, 154, 233)"></h3></center>
+
+        <div id="list-section">
+        <h3  id="tourist_places"></h3>
+        <ul id="places-list"></ul></div>
+
+        <div id="poi"></div>
+      </section>
+      
+    </main>
+    <footer>
+      <p>&copy; 2023 Easy Journey Train Booking Website</p>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

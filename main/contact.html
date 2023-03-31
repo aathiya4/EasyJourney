@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Journey Homepage</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+  </head>
+  <body>
+    <header>
+      <h1>Travel with Ease today!</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button  onclick="logout()" id="logout" class="btn btn-danger right">Logout</button>
+    </header>
+    <main>
+      <section class="results">
+        <h3  id="user" >Hello user!</h3>
+      </section>
+      <section class="search">
+        <h2>Contact us</h2>
+        <p>For any inquiries or assistance, please feel free to contact us:</p>
+
+        <ul id="contact">
+            <li><strong>Phone:</strong> +91 9330714268</li>
+            <li><strong>Email:</strong> 22je0011@iitism.ac.in</li>
+            <li><strong>Address:</strong> IIT Dhanbad</li>
+          </ul>
+          <p>Connect with us on social media:</p>
+          <ul class="social-media" id="contact">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li> <!-- Currently not providing any link - staying in same page -->
+          </ul>
+      </section>
+      
+      
+    </main>
+    <footer>
+      <p>&copy; 2023 Easy Journey Train Booking Website</p>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/98f8785c92.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+  }
+  
+  header {
+    background-color: rgba(1, 15, 20, 0.8);
+    color: rgb(195, 211, 166);
+    padding: 1em;
+    background-image: url('images/EasyJourney.png');
+    background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  }
+  
+  nav {
+    display: inline-block;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    color: rgb(195, 211, 166);
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 1em;
+  }
+  
+  .search {
+    border: 1px solid #f5e4e4;
+    padding: 2em;
+    margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+
+  }
+
+ 
+  #contact{
+    list-style-type: none;
+
+  }
+  
+  .search h2 {
+    margin-top: 0;
+  }
+  
+  .results table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results th, .results td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  .results th {
+    background-color:rgba(195, 216, 207, 0.8);
+  }
+  
+  .results td {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+
+  .list-group-item {
+    display: block;
+    margin: 0;
+    padding-right: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    width: 90%;
+  margin: 0 auto;
+  }
+  
+  .list-group-item:hover {
+    background-color: #cce2f7;
+  }
+  
+  .list-group-item.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .list-group-item-text {
+    margin-bottom: 0;
+  }
+  
+  #poi {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+  }
+  
+  #image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .caption {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  } 
+
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/train2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Set the opacity to 0.8 */
+    z-index: -1;
+  }
+
+#tourist_places{
+   color: rgb(20, 9, 87);
+   font-family: Times New Roman, Times, serif;
+}
+
+#search{
+  background-color: #bde5f0;
+  color: rgb(3, 9, 37);
+  border: 1px solid rgb(5, 25, 88);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+ .book-btn{
+  background-color: #c5dbdb;
+  color: rgb(5, 25, 88);
+  border: 0.5px solid rgb(5, 25, 88);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+ #logout{
+  background-color: #ad9492;
+  color: rgb(7, 5, 5);
+  border: 0.5px solid rgb(5, 25, 88);
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+ }
+
+ @keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#loading.blink {
+  animation: blink 1s infinite;
+}
