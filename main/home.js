@@ -153,7 +153,7 @@ function get_tourist_places(){
    
     let name = document.getElementById('to').value;
     apiGet("geoname", "name=" + name).then(function(data) {
-      let message = "Name not found";
+      let message = "We cannot find "+name+" in our database to display tourist spots!";
       if (data.status == "OK") {
         message = "Here are some tourists spots we found in " + data.name + " (within 5kms radius)! Click on the names of the destinations to know more about them. "; //+ ", " + getCountryName(data.country);
         lon = data.lon;

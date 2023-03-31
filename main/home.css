@@ -215,4 +215,7 @@ body {
 
 #loading.blink {
   animation: blink 1s infinite;
+  text-align: center;
 }
+
+#search_results{text-align: center;}
