@@ -9,6 +9,13 @@ A website that makes planning a trip easier by displaying the trains available o
 The code can be found in the main folder. 
 
 Name- Aathiya Kundu
+
+
 Branch - Electronics and Communication Engineering
-Student ID - 22JE0011
+
+
+Admission number - 22JE0011
+
+
 Project - Easy Journey 
+
