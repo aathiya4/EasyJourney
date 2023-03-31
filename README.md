@@ -10,12 +10,9 @@ The code can be found in the main folder.
 
 Name- Aathiya Kundu
 
-
 Branch - Electronics and Communication Engineering
 
-
 Admission number - 22JE0011
-
 
 Project - Easy Journey 
 
